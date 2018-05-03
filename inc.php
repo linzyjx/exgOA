@@ -7,7 +7,7 @@
  */
 include_once("conn_db.php");
 include_once("session_chk.php");
-
+//header("Content-type: text/html; charset=utf-8");
 date_default_timezone_set('Asia/Shanghai');
 if($user_resetpw==1){
     echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."密码已过期，请重设密码."."\"".")".";"."</script>";

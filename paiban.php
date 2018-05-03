@@ -25,8 +25,10 @@ include_once("paiban_sql.php");
             <li class="breadcrumb-item">
                 <a href="#">e修哥</a>
             </li>
-            <li class="breadcrumb-item active">排班</li>
+            <li class="breadcrumb-item">排班</li>
+            <li class="breadcrumb-item"><?php echo $phase_id;?>期</li>
         </ol>
+
 <!--        <form action="paiban_post.php?id=--><?php //echo $user_id;?><!--" method="post">-->
 <!--            <div class="bd-example">-->
 <!--                <div class="btn-group btn-group-toggle" data-toggle="buttons">-->

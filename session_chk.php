@@ -20,6 +20,7 @@ if (isset($_SESSION["user_id"])){
     $user_resetpw= $row['resetpw'];
 //    var_dump($row);
     if(empty($user_name)){
+//        header("Content-type: text/html; charset=utf-8");
         echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."身份异常!"."\"".")".";"."</script>";
         echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
         exit();
