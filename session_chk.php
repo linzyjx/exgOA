@@ -21,14 +21,20 @@ if (isset($_SESSION["user_id"])){
     $user_resetpw= $row['resetpw'];
 //    var_dump($row);
     if(empty($user_name)){
+        echo '<html>';
+        echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
         header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload");
         echo"<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."身份异常!"."\"".")".";"."</script>";
         echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+        echo "</html>";
         exit();
     }
 }else
 {
-    echo"<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."您未登录，·请先登录!"."\"".")".";"."</script>";
-    echo"<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+    echo '<html>';
+    echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+    echo "<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."您未登录，·请先登录!"."\"".")".";"."</script>";
+    echo "<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+    echo "</html>";
     exit();
 }
