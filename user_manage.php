@@ -12,7 +12,7 @@ $stmt = $conn->prepare($sql);
 //$stmt->bind_param("s", $test_id);
 $stmt->execute();
 $result = $stmt->get_result();
-$group_name=array("超级管理员","管理员","2","3","4","用户");
+$group_name=array("超级管理员","用户管理员","2","版块管理员","4","用户");
 $resetpw_name=array("否","是");
 include_once('sidebar.php');
 ?>
