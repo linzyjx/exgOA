@@ -7,5 +7,8 @@
  */
 session_start();
 session_destroy();
-echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."已退出，请重新登录"."\"".")".";"."</script>";
-echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+echo '<html>';
+echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+echo "<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."已退出，跳转回登录页面"."\"".")".";"."</script>";
+echo "<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
+echo "</html>";
