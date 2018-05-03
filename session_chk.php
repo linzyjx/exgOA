@@ -7,6 +7,7 @@
  */
 include_once("conn_db.php");
 session_start();
+header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload");
 if (isset($_SESSION["user_id"])){
     $sql = "SELECT id, name, gid, resetpw FROM user WHERE id=?";
     $stmt = $conn->prepare($sql);
@@ -20,7 +21,8 @@ if (isset($_SESSION["user_id"])){
     $user_resetpw= $row['resetpw'];
 //    var_dump($row);
     if(empty($user_name)){
-//        header("Content-type: text/html; charset=utf-8");
+        header("Content-type: text/html; charset=utf-8");
+        header("Strict-Transport-Security: max-age=63072000; includeSubdomains; preload");
         echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."身份异常!"."\"".")".";"."</script>";
         echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
         exit();
