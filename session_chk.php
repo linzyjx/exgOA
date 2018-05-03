@@ -28,7 +28,7 @@ if (isset($_SESSION["user_id"])){
         exit();
     }
 }else
-{
+{   header("Content-type: text/html; charset=utf-8");
     echo"<script type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."您未登录，·请先登录!"."\"".")".";"."</script>";
     echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
     exit();
