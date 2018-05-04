@@ -9,8 +9,7 @@ include_once('inc.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="zh-">
-CN
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
