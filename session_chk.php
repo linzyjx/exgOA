@@ -31,8 +31,7 @@ if (isset($_SESSION["user_id"])){
     }
 }else
 {
-    echo '<html>';
-    echo '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
+    echo '<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
     echo "<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.alert"."("."\""."您未登录，·请先登录!"."\"".")".";"."</script>";
     echo "<script charset=\"UTF-8\" type="."\""."text/javascript"."\"".">"."window.location="."\""."login.html"."\""."</script>";
     echo "</html>";

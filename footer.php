@@ -32,8 +32,8 @@
             </div>
             <div class="modal-body">你确定要退出并删除会话?</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="logout.php">Logout</a>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">取消</button>
+                <a class="btn btn-primary" href="logout.php">退出</a>
             </div>
         </div>
     </div>

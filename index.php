@@ -13,9 +13,8 @@ include_once('sidebar.php')
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="#">Dashboard</a>
+                    e修哥
                 </li>
-                <li class="breadcrumb-item active">My Dashboard</li>
             </ol>
             <div class="card mb-3">
                 <div class="card-body">

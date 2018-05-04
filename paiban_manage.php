@@ -24,7 +24,7 @@ include_once("paiban_sql.php");
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="#">e修哥</a>
+                e修哥
             </li>
             <li class="breadcrumb-item active">排班管理</li>
             <li class="breadcrumb-item active">

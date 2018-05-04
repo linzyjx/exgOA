@@ -23,7 +23,7 @@ include_once("paiban_sql.php");
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="#">e修哥</a>
+                e修哥
             </li>
             <li class="breadcrumb-item">排班</li>
             <li class="breadcrumb-item"><?php echo $phase_id;?>期</li>
@@ -125,7 +125,7 @@ include_once("paiban_sql.php");
                                     $group_user_num=$group_data[$i]['user_num'];
                                     ?>
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary btn-sm <?php echo @in_array($t_group_id,$usergroup_data)?'active':null; ?> <?php echo (($num_ex>=$group_user_num) &&!@in_array($t_group_id,$usergroup_data))?'disabled':null ?>">
+                                        <label class="btn btn-outline-info btn-sm <?php echo @in_array($t_group_id,$usergroup_data)?'active':null; ?> <?php echo (($num_ex>=$group_user_num) &&!@in_array($t_group_id,$usergroup_data))?'disabled':null ?>">
                                             <input type="checkbox" name="group_choices[]" value="<?php echo $t_group_id; ?>" <?php echo @in_array($t_group_id,$usergroup_data)?'checked=""':null; ?> autocomplete="off">
                                             <?php
                                             echo "$num_ex/$group_user_num"?>
@@ -146,7 +146,7 @@ include_once("paiban_sql.php");
                         ?>
                         </tbody>
                     </table>
-                        <input class="btn btn-primary active" type="submit" value="提交" <?php echo ($is_phase_active)?null:'disabled' ?>>
+                        <input class="btn btn-info" type="submit" value="提交" <?php echo ($is_phase_active)?null:'disabled' ?>>
                     </form>
                 </div>
             </div>

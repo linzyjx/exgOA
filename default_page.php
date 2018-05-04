@@ -13,7 +13,7 @@ include_once('sidebar.php');
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="#">e修哥</a>
+                e修哥
             </li>
             <li class="breadcrumb-item active">空白页</li>
         </ol>
