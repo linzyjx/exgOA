@@ -32,7 +32,7 @@ include_once("conn_db.php");
           $stmt = $conn->prepare($sql);
           $stmt->bind_param("ii", $time,$row['id']);
           $stmt->execute();
-        echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."index.php"."\""."</script>";
+        echo"<script type="."\""."text/javascript"."\"".">"."window.location="."\""."paiban.php"."\""."</script>";
         die();
       }else
       {
