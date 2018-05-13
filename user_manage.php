@@ -63,16 +63,16 @@ include_once('sidebar.php');
                             <td>
                                 <!-- Example split danger button -->
                                     <div class="btn-group">
-                                        <button class="btn btn-secondary btn-sm" type="button">111</button>
+                                        <a class="btn btn-secondary btn-sm" href="user_manage_resetpw.php?id=<?php echo $row["id"];?>&resetpw=1&defaultpw=1" role="button">重置密码</a>
                                             <span class="sr-only">Toggle Dropdown</span>
                                             <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             </button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="user_manage_resetpw.php?id=<?php echo $row["id"];?>&resetpw=1">登录后修改密码</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
+<!--                                            <a class="dropdown-item" href="#">Another action</a>-->
+<!--                                            <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                                            <div class="dropdown-divider"></div>-->
+<!--                                            <a class="dropdown-item" href="#">Separated link</a>-->
                                         </div>
                                     </div>
                             </td>

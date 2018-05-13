@@ -21,16 +21,27 @@ if(isset($_GET['id'])){
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("i", $row['id']);
             if($stmt->execute()){
-                echo "ok";
+                echo "resetpw ok </br>";
             }else{
-                echo "fail";
+                echo "resetpw fail </br>";
+            }
+        }
+        if (isset($_GET['defaultpw']) && $_GET['defaultpw'] == 1){
+            $sql = "UPDATE user SET passwd=? WHERE id =?";
+            $stmt = $conn->prepare($sql);
+            $npwhash=password_hash($row['id'], PASSWORD_DEFAULT);
+            $stmt->bind_param("si",$npwhash, $row['id']);
+            if($stmt->execute()){
+                echo "已重置为默认密码：学号 </br>";
+            }else{
+                echo "defaultpw fail </br>";
             }
         } else {
             echo "symbol error";
         }
     }else{
-        echo "no exist id ".$_GET['id'];
+        echo "no exist id ".$_GET['id'].'</br>';
     }
 }else{
-    echo "no set id";
+    echo "no set id </br>";
 }
