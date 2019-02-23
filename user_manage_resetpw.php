@@ -7,6 +7,7 @@
  */
 $mod_level=1;
 include_once("inc.php");
+echo '<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>';
 if(isset($_GET['id'])){
     $sql="select id from user where id=?";
     $stmt = $conn->prepare($sql);
