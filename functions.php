@@ -7,7 +7,7 @@
  */
 include_once("inc.php");
 
-function format_week(int $w)
+function format_week($w)
 {
     $week_row = array(
         '1' => '星期一',
@@ -24,7 +24,7 @@ function format_week(int $w)
 function date_format_week($t_date)
 {
 //    echo "<!--" . date("w", strtotime($t_date)). "-->";
-    return (format_week((int)date("w", strtotime($t_date))));
+    return (format_week(date("w", strtotime($t_date))));
 }
 
 function getstatus($status, $position)
