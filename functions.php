@@ -23,7 +23,7 @@ function format_week(int $w)
 
 function date_format_week($t_date)
 {
-    echo "<!--" . $t_date . "-->";
+    echo "<!--" . date("w", strtotime($t_date)). "-->";
     return (format_week(date("w", strtotime($t_date))));
 }
 
