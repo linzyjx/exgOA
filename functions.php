@@ -23,8 +23,8 @@ function format_week(int $w)
 
 function date_format_week($t_date)
 {
-    echo "<!--" . date("w", strtotime($t_date)). "-->";
-    return (format_week(date("w", strtotime($t_date))));
+//    echo "<!--" . date("w", strtotime($t_date)). "-->";
+    return (format_week((int)date("w", strtotime($t_date))));
 }
 
 function getstatus($status, $position)
